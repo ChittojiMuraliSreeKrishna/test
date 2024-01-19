@@ -58,7 +58,7 @@ public class UserController {
 
         try {
             for (Users todo : allTodos) {
-                Long currentTodoId = todo.getId();
+                Long currentTodoId = todo.getUserId();
                 if (currentTodoId != null && currentTodoId.equals(todoId)) {
                     Map<String, Object> response = new HashMap<>();
                     response.put(USER_DETAIL_STRING, todo);
